@@ -18,7 +18,7 @@
     </style>
 </head>
 <body>
-    <h1>Datumjämförelse</h1>
+    <h1>Tandställningen</h1>
     <p id="result"></p>
 
     <script>
@@ -32,10 +32,10 @@
             var resultElement = document.getElementById("result");
 
             if (daysDiff % 2 === 0) {
-                resultElement.textContent = "Dagens datum är ett jämnt antal dagar från den 1 januari 2024.";
+                resultElement.textContent = "I natt ska du ha gummiband när du sover!";
                 resultElement.style.color = "green";
             } else {
-                resultElement.textContent = "Dagens datum är ett ojämnt antal dagar från den 1 januari 2024.";
+                resultElement.textContent = "Inget gummiband i natt!";
                 resultElement.style.color = "red";
             }
         });
