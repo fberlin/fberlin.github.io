@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datumjämförelse</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        #result {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Datumjämförelse</h1>
+    <p id="result"></p>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var currentDate = new Date();
+            var targetDate = new Date("2024-01-01");
+
+            var timeDiff = Math.abs(currentDate.getTime() - targetDate.getTime());
+            var daysDiff = Math.ceil(timeDiff / (1000 * 3600 * 24));
+
+            var resultElement = document.getElementById("result");
+
+            if (daysDiff % 2 === 0) {
+                resultElement.textContent = "Dagens datum är ett jämnt antal dagar från den 1 januari 2024.";
+                resultElement.style.color = "green";
+            } else {
+                resultElement.textContent = "Dagens datum är ett ojämnt antal dagar från den 1 januari 2024.";
+                resultElement.style.color = "red";
+            }
+        });
+    </script>
+</body>
+</html>
