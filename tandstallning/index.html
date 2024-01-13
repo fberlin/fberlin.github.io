@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tandställningen</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -16,12 +18,18 @@
             margin-top: 20px;
         }
 
+        #bottomIcon {
+            margin-top: 30px;
+            font-size: 100px; /* Justera storleken efter behov */
+        }
+
     </style>
 </head>
 <body>
     <h1>Tandställningen</h1>
     <p id="currentDate"></p>
     <p id="result"></p>
+    <i id="bottomIcon"></i>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             var currentDate = new Date();
@@ -34,13 +42,18 @@
             currentDateElement.textContent = currentDate.toLocaleDateString();
 
             var resultElement = document.getElementById("result");
+            var bottomIcon = document.getElementById("bottomIcon");
 
             if (daysDiff % 2 === 0) {
                 resultElement.textContent = "I natt ska du ha gummiband när du sover!";
                 resultElement.style.color = "green";
+                bottomIcon.style.color = "green";
+                bottomIcon.className = "fas fa-check-circle text-success"; // Font Awesome grön checkbox
             } else {
                 resultElement.textContent = "Inget gummiband i natt!";
                 resultElement.style.color = "red";
+                bottomIcon.style.color = "red";
+                bottomIcon.className = "fas fa-times-circle text-danger"; // Font Awesome röd stoppsignal
             }
         });
     </script>
