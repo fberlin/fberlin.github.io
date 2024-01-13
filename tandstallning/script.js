@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
         bottomIcon.style.color = "green";
         bottomIcon.className = "fas fa-check-circle text-success"; // Font Awesome grön checkbox
     } else {
-        resultElement.textContent = "Inget gummiband i natt!";
+        resultElement.textContent = "Inga gummiband i natt!";
         resultElement.style.color = "red";
         bottomIcon.style.color = "red";
         bottomIcon.className = "fas fa-times-circle text-danger"; // Font Awesome röd stoppsignal
