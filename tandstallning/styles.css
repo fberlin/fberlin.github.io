@@ -13,3 +13,11 @@ body {
     margin-top: 20px;
     font-size: 100px; /* Justera storleken efter behov */
 }
+
+#bottomImage {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    max-width: 300px;
+    max-height: 300px;
+}
