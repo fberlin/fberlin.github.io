@@ -15,12 +15,13 @@
             font-size: 24px;
             margin-top: 20px;
         }
+
     </style>
 </head>
 <body>
     <h1>Tandställningen</h1>
+    <p id="currentDate"></p>
     <p id="result"></p>
-
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             var currentDate = new Date();
@@ -28,6 +29,9 @@
 
             var timeDiff = Math.abs(currentDate.getTime() - targetDate.getTime());
             var daysDiff = Math.ceil(timeDiff / (1000 * 3600 * 24));
+
+            var currentDateElement = document.getElementById("currentDate");
+            currentDateElement.textContent = currentDate.toLocaleDateString();
 
             var resultElement = document.getElementById("result");
 
