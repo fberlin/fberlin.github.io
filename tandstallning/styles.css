@@ -1,7 +1,8 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
     text-align: center;
     margin: 0;
+    background-color: #FCFCFF;
 }
 
 #result {
@@ -12,6 +13,12 @@ body {
 #bottomIcon {
     margin-top: 20px;
     font-size: 100px; /* Justera storleken efter behov */
+}
+
+#heartIcon {
+    margin: 20px 5px 0 5px;
+    font-size: 30px; /* Justera storleken efter behov */
+    color: red;
 }
 
 #bottomImage {

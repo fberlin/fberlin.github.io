@@ -12,12 +12,12 @@ document.addEventListener("DOMContentLoaded", function() {
     var bottomIcon = document.getElementById("bottomIcon");
 
     if (daysDiff % 2 === 0) {
-        resultElement.textContent = "I natt ska du ha gummiband när du sover!";
+        resultElement.textContent = "I natt ska du ha retainer när du sover!";
         resultElement.style.color = "green";
         bottomIcon.style.color = "green";
         bottomIcon.className = "fas fa-check-circle text-success"; // Font Awesome grön checkbox
     } else {
-        resultElement.textContent = "Inga gummiband i natt!";
+        resultElement.textContent = "Ingen retainer i natt!";
         resultElement.style.color = "red";
         bottomIcon.style.color = "red";
         bottomIcon.className = "fas fa-times-circle text-danger"; // Font Awesome röd stoppsignal
