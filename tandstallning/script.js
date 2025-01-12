@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var resultElement = document.getElementById("result");
     var bottomIcon = document.getElementById("bottomIcon");
 
-    if (daysDiff % 2 === 0) {
+    if (daysDiff % 2 === 1) {
         resultElement.textContent = "I natt ska du ha retainer när du sover!";
         resultElement.style.color = "green";
         bottomIcon.style.color = "green";
